@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity
-@Table(name = "tagCategories")
+@Table(name = "tag-Categories")
 public class TagCategory {
 
     @Id
@@ -17,9 +17,9 @@ public class TagCategory {
     private Long id;
 
     @Column(name = "name", length = 100, nullable = false)
-    private String title;
+    private String name;
 
     @OneToMany(cascade = {CascadeType.ALL})
-    @JoinTable(name = "tagcategory_tags", joinColumns = {@JoinColumn(name = "tagcategory_id")}, inverseJoinColumns = {@JoinColumn(name = "tag_id")})
+    @JoinTable(name = "tag-category_tags", joinColumns = {@JoinColumn(name = "tag-category_id")}, inverseJoinColumns = {@JoinColumn(name = "tag_id")})
     private Set<Tag> tag = new HashSet<>();
 }
