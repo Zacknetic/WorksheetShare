@@ -1,8 +1,8 @@
 package com.application.worksheetshare.entity.Embeddable;
 
-import jakarta.persistence.*;
-import lombok.*;
-
+import jakarta.persistence.Embeddable;
+import lombok.Getter;
+import lombok.Setter;
 import java.util.Date;
 
 @Getter

@@ -8,13 +8,13 @@ import lombok.Setter;
 @Setter
 @Embeddable
 public class Transformation {
-    private Long containerId;
-    private float xPosition;  // X-coordinate on the page
-    private float yPosition;  // Y-coordinate on the page
+
+    private float x_coordinate;  // X-coordinate on the page
+    private float y_coordinate;  // Y-coordinate on the page
     private float width;
     private float height;
     private float rotation;   // In degrees
-    private int zIndex;
+    private int z_index;
 
     //TODO: scale (fixed / unfixed)
 
